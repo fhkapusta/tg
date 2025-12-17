@@ -2,7 +2,7 @@
 // setwebhook.php - Встановлення webhook після деплою
 
 $token = '8330860787:AAHsXGplrPT4W5Bj8p8RZhS69OlDVRd1j2s'; // Ваш токен
-$webhook_url = 'tg-production-f342.up.railway.app'; // URL від Railway (наприклад: https://yourapp.up.railway.app)
+$webhook_url = 'https://tg-production-f342.up.railway.app'; // URL від Railway (наприклад: https://yourapp.up.railway.app)
 
 echo "🔧 Налаштування Telegram Bot Webhook\n";
 echo str_repeat("=", 50) . "\n\n";
