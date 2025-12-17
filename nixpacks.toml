@@ -1,8 +1,8 @@
-﻿[phases.setup]
-nixPkgs = ['php82', 'nginx']
+[phases.setup]
+nixPkgs = ['php82']
 
 [phases.install]
-cmds = ['echo "Installing..."']
+cmds = ['composer install --no-dev --optimize-autoloader || true']
 
 [start]
-cmd = 'php -S 0.0.0.0:$PORT'
+cmd = 'php -S 0.0.0.0:${PORT:-8080} -t .'
